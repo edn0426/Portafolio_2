@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand {
+    margin-top: -7px;
+}
+
+.brand span {
+    color: aqua;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active {
+    color: rgb(198, 214, 214);
+    border-radius: 20px;
+}
+
+.menu a:hover {
+    background-color: aqua;
+    color: #191c32;
+    transition: ease-in 0.4s;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+span {
+    color: aqua;
+}
+
+.download-cv {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+
+.download-cv:hover {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.main img {
+    width: 350px;
+    border: 7px solid aqua;
+    height: 520px;
+    z-index: 1;
+}
+
+/* Media Queries */
+
+/* Tablets and Mobile Phones */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 20px;
+    }
+
+    .main img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .brand h2 {
+        font-size: 1.5em;
+    }
+
+    .menu a {
+        padding: 8px 15px;
+    }
+
+    .download-cv {
+        padding: 8px 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,228 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.brand {
+    margin-top: -7px;
+}
+
+.brand span {
+    color: aqua;
+}
+
+.menu {
+    display: flex;
+    width: 500%;
+    justify-content: center;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active {
+    color: aqua;
+    border-radius: 20px;
+}
+
+.menu a:hover {
+    background-color: #fff;
+    color: #191c32;
+    transition: ease-in 0.4s;
+}
+
+.main {
+    margin: 0 auto;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+span {
+    color: aqua;
+}
+
+.portafolio {
+    width: 100%;
+    padding: 2em;
+    background-color: #191c32;
+}
+
+.portafolio-headings {
+    width: 100%;
+    padding: 2em;
+}
+
+.portafolio-headings h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.portafolio .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card {
+    width: 300px;
+    color: #111010;
+    height: 350px;
+    background-color: rgb(226, 225, 235);
+    margin: 1em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+}
+
+.card__title {
+    padding: 10px;
+}
+
+.card_projects-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 10px;
+}
+
+.card_projects-links a {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+.card_projects-links i {
+    font-size: 1.5em;
+}
+
+.projects-details-content {
+    text-align: center;
+    padding: 10px;
+}
+
+.projects-details-content a {
+    text-decoration: none;
+    color: #191c32;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 1.5em;
+    }
+
+    .menu a {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .main {
+        height: auto;
+        padding: 3em;
+    }
+
+    .portafolio-headings h2 {
+        font-size: 1.8em;
+    }
+
+    .card {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        flex-direction:column;
+    }
+
+    .menu a {
+        padding: 15px;
+    }
+
+    .main {
+        grid-template-columns: 2fr;
+        height: auto;
+    }
+
+    .portafolio .container {
+        flex-direction: column;
+        padding: auto;
+    }
+
+    .card {
+        width: 70%;
+        margin: 0.5em 0;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 1em;
+        
+    }
+
+    .menu a {
+        padding: 8px 15px;
+    }
+
+    .card__title {
+        padding:auto;
+      
+    }
+
+    .card_projects-links a {
+        font-size: 1.2em;
+    }
+
+    .projects-details-content a {
+        font-size: 0.9em;
+    }
+
+    
+}

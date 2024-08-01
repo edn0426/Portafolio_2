@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #6068a5;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em; /* Ajuste del padding */
+}
+
+.brand {
+    padding: 10px 20px;
+}
+
+.brand span {
+    color: aqua;
+    font-size: 1.5em;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active {
+    color: rgb(18, 19, 19);
+}
+
+.menu a:hover {
+    background-color: rgb(225, 225, 241);
+    color: #191c32;
+    transition: ease-in 0.4s;
+    border-radius: 20px;
+}
+
+.main {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+span h1 {
+    color: aqua;
+}
+
+img {
+    max-width: 70%; /* Asegura que la imagen se ajuste al contenedor */
+    height: 80%; /* Mantiene la proporción de la imagen */
+    grid-template-columns: 2 1fr;
+}
+
+.about-info {
+    margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 1.5em;
+    }
+
+    .menu {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .menu a {
+        padding: 15px;
+    }
+
+    .main {
+        width: 90vw;
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    h1 {
+        font-size: 2em; /* Ajusta el tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1em;
+    }
+
+    .menu a {
+        padding: 10px;
+    }
+
+    .main {
+        width: 95vw;
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Ajusta el tamaño del texto */
+    }
+}
